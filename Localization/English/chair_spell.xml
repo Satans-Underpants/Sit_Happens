@@ -1,5 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
-    <content contentuid="h425ac8ffg564fg4296g88a6ga977fd460d4c" version="1">Summon Bed</content>
-    <content contentuid="hfbfa9bf0g8b57g44a3g925cgd5201e97dffe" version="1">Summons a nice bed</content>
+    <content contentuid="h85e56ac7gb9fag4b72ga23ag8bf353ee97e5" version="1">Sit Happens</content>
+    <content contentuid="hc21dc97bgd286g4bb9g9031gcf326d508282" version="1"></content>
+
+    <content contentuid="hd106de78gde49g47bfg8998g505c06bfcc22" version="1">Cleanup</content>
+    <content contentuid="hf33e86c8g49fag46c7gb6cag333d1148e35d" version="1">Removes all summons and possible debris.</content>
+    
+    <content contentuid="h81744d28gee93g45abg9bdeg7b1a93ec4ad8" version="1">Base Chair</content>
+    <content contentuid="hb6592c46g89f2g4963g91e6g24bd162c9f99" version="1">A simple and comfortable chair.</content>
+    
+    <content contentuid="h53b5c4f5gad82g438cg9addg839ae1c4870a" version="1">Sittable Chair</content>
+    <content contentuid="ha5ffe58dg2694g453ag94e3g71f30ab60b63" version="1">Seems sturdy enough to sit on it.</content>
+    
+    <content contentuid="h20f91225g546dg4a08g9034gf05250b65eec" version="1">Temple Stone Chair</content>
+    <content contentuid="h5a6907c6g73b4g4d2cgb922gea1b59146bc2" version="1"></content>
+    
+    <content contentuid="h99d99dc7ge3f4g4c63g82d8g6da854234234" version="1">Thayan Chair - A</content>
+    <content contentuid="h81044735gcce2g4141g95ddg5c4049da5dde" version="1">An elegant chair representing the distinct style of Thayan craftsmanship.</content>
+    
+    <content contentuid="hb5bc04e6gda45g4878g9bddg936dbf7b4eb5" version="1">Thayan Chair - B</content>
+    <content contentuid="h91e508b0gee5dg4bccgb661gb1dd860d451d" version="1">Another exquisite creation from Thayan artisans, with a unique design.</content>
+    
+    <content contentuid="h5de1b009gce9dg4c62g8192g2cc3e87c0b59" version="1">Flat Rock</content>
+    <content contentuid="h1e8fb33ag97e8g403bg8793gd1dd79977158" version="1">Comfy Boulder.</content>
+    
+    <content contentuid="h127110f7g5ea8g41d5g9553g44c4779d4e94" version="1">Old Armchair</content>
+    <content contentuid="hce9c0bbdgf09fg49cbg982dg17444eb89f4a" version="1">Best thing to sit in after escaping from a hag.</content>
+    
+    <content contentuid="he253f96cg4091g44ceg8095g31cde2caa802" version="1">Furry Chair</content>
+    <content contentuid="h437affd3g633dg4ae8gbf48g0ac41cb88d73" version="1">Not that kind of furry.</content>
+    
+    <content contentuid="he0a1634bg9094g4b9dgbab5gea7ca30f15fc" version="1">Stool of Hill Giant Strength</content>
+    <content contentuid="h8f4dc42cgd8bbg456fg8d89gc3beba4ec684" version="1">Please don't use for duping - We can't stop you tho.</content>
+    
+    <content contentuid="h45d69f51gfeb9g4f30g8a36g71ec24ae7a69" version="1">Wooden Chair - Poor</content>
+    <content contentuid="h1710a03bgbf4dg4b66g8201g3067353f6e51" version="1">A basic wooden chair, humble yet functional.</content>
+    
+    <content contentuid="h6495d53bg6c9eg4aa0gb4cbg6157755ec2cd" version="1">Thayan Stool - Elegant</content>
+    <content contentuid="h2461fc04g1edfg44b1ga2c6ga2e17b800682" version="1">A stylish stool reflecting the refined taste of Thayan aesthetics.</content>
+    
+    <content contentuid="hdcb0d98ag86fbg4e96g8616g49ed5e0305a5" version="1">Smiths Stool</content>
+    <content contentuid="h070e261dg687fg43cbga66egddd5695dc2ee" version="1">Crafted for those who work with their hands, a sturdy stool for artisans and blacksmiths.</content>
+    
+    <content contentuid="hc7f1dcc5g7289g40b4gb015g9edc673ad5db" version="1">Large Tavern Stool</content>
+    <content contentuid="h87ef3bf6g865dg48bcgaebcg2d39079b332c" version="1">A substantial stool suitable for the lively atmosphere of a bustling tavern.</content>
+    
+    <content contentuid="h252fa6b1g09e2g494bgaf29gbd777be3f0ae" version="1">Large Tavern Stool - Old</content>
+    <content contentuid="h1d7077d4g3d9cg4f67g9649g2e3c95834ad2" version="1">An aged version of the large tavern stool, carrying the marks of countless patrons.</content>
+    
+    <content contentuid="hdcb9b187gf1c3g4e45gb317g9205386c460c" version="1">Small Tavern Stool</content>
+    <content contentuid="h15210a17g802bg489bga225g805847418119" version="1">A compact stool for intimate settings, perfect for one-on-one conversations.</content>
+    
+    <content contentuid="hc937f70cg89f4g4accgaa9cg5185eab6f55a" version="1">Small Tavern Stool - Old</content>
+    <content contentuid="h88447722g1727g48fbg9127g1f70c0e9129d" version="1">A weathered version of the small tavern stool, embodying the charm of well-used furniture.</content>
+    
+    <content contentuid="ha5eb7e8cg399dg4921gb791g16914f5ca910" version="1">Wooden Stool - Poor</content>
+    <content contentuid="h8500866bg083dg4fc7gbba5gacccc858d9d8" version="1">A modest wooden stool, functional and unassuming.</content>
+    
+    <content contentuid="h89fbaa3eg79d3g41fag8e75gf8482af7cc0e" version="1">Piano Stool</content>
+    <content contentuid="hbb14afc3g18d7g4829g9021g93ea78a53c33" version="1">A stool designed for pianists, offering comfort during musical performances.</content>
+    
+    <content contentuid="ha8b40520gfd0ag4a2egb720gf61b75db76c5" version="1">Piano Stool - Padded</content>
+    <content contentuid="h5aa808aeg728ag4431gb60egf0247dc708c9" version="1">An upgraded version of the piano stool with added padding for extended sessions.</content>
+    
+    <content contentuid="h2f995758gddecg4412gb114gc8c14a5e35c6" version="1">Stool</content>
+    <content contentuid="h635d56f4g35f0g40a3g8ce6g645a8d910348" version="1">A generic stool, versatile and suitable for various purposes.</content>
+    
+    <content contentuid="h723447a4g1b7ag4ff7gac31g1f82923fe1c5" version="1">Bench</content>
+    <content contentuid="h0b312e9bg07fag49e4gb092ge05eac40275c" version="1">A simple and practical bench, providing seating for individuals seeking a moment of respite.</content>
+    
+    <content contentuid="h6a30ef65gf42cg411cg9515g9be401f32955" version="1">Ship Benches</content>
+    <content contentuid="hcf9c30b1g271cg474cga475gff876ec6d1f0" version="1">Benches designed for ships, offering comfortable seating in a maritime setting.</content>
+    
+    <content contentuid="hcfaeb141g9132g4826ga750gdeeb0124d53e" version="1">Druid Stone Bench</content>
+    <content contentuid="h85a56926g0a99g4e6fg945bg4114a1798991" version="1">A bench made from natural materials, blending seamlessly with natural surroundings.</content>
+    
+    <content contentuid="h038ae823g2921g4688g9ecaga27dec8e6108" version="1">Druid Stone Bench - Mossy</content>
+    <content contentuid="ha109db2bg8a9ag4369gbd93g3328ed8b7cfb" version="1">A moss-covered version of the druid stone bench, harmonizing with nature.</content>
+    
+    <content contentuid="h34d033acg5a9fg4360gb3b7g3799f549f8cb" version="1">Granite Bench - A</content>
+    <content contentuid="h3d7a7bebgce5dg41b1g9738gb7a139966a76" version="1">A sturdy bench made of granite, adding a touch of elegance.</content>
+    
+    <content contentuid="h25d65630g6088g4294gb62eg4d1fb08c648f" version="1">Granite Bench - Mossy A</content>
+    <content contentuid="h430f90b0g9584g4cfdg9c5dg2e4f853d6e11" version="1">A weathered stone bench covered in moss, offering a rustic and natural seating option in outdoor environments.</content>
+    
+    <content contentuid="hc69de5b6g1f76g4460gafd8g19cf73762488" version="1">Granite Bench - Shar A</content>
+    <content contentuid="hb0f152cagbcdeg42cbga389gc735aef00488" version="1">A sleek and finely crafted stone bench, embodying an elegant and sophisticated design for upscale settings.</content>
+    
+    <content contentuid="h4bb64cffg8874g4383g9b32g03fab9f48f32" version="1">Granite Bench - B</content>
+    <content contentuid="hd3d3a68bga605g4420g9e46gde30aab90653" version="1">A sturdy stone bench with a simple design, providing durable and functional seating for various outdoor spaces.</content>
+    
+    <content contentuid="h44172709g823fg4b6cgaaa8g17ad90feedaa" version="1">Granite Bench - Shar B</content>
+    <content contentuid="hb01189a8g0b78g4e77g9b8dg16de11deb82e" version="1">An exquisite stone bench showcasing intricate craftsmanship, suitable for creating an atmosphere of luxury and refinement.</content>
+    
+    <content contentuid="h05a88f69g9b7cg4281ga4adgea4dfd50205c" version="1">Granite Bench - C</content>
+    <content contentuid="h2b99e172g2b5dg4d94g9a71ga039a589afb3" version="1">A minimalist stone bench, ideal for modern outdoor spaces, combining simplicity with the durability of granite construction.</content>
+    
+    <content contentuid="hd59d032cg9798g4864gb4d6g00a131280ef7" version="1">Granite Bench - Mossy C</content>
+    <content contentuid="h24ea6d47gf26fg4375ga5d5ge404f7783aae" version="1">A weathered stone bench with moss accents, seamlessly blending into natural surroundings, offering a harmonious outdoor seating option.</content>
+    
+    <content contentuid="hbf7b2fe4g1bcdg4a9fgaabeg2b58b53d9278" version="1">Granite Bench - Shar C</content>
+    <content contentuid="h5caab86bgaf68g4f1cg9b24gd0cb9d50e920" version="1">A sophisticated stone bench with a unique design, perfect for adding a touch of elegance to outdoor seating arrangements.</content>
+    
+    <content contentuid="h11634d30g0687g458fgbbe8ga099f9f33e1f" version="1">Granite Bench - D</content>
+    <content contentuid="hded05c53g239ag4b2egbeeega0e49abb302c" version="1">A contemporary stone bench, featuring a distinctive design and solid construction for stylish and durable outdoor seating solutions.</content>
+    
+    <content contentuid="h396e1a87g25f5g49c7gbb8agc98f194a3712" version="1">Granite Bench - E</content>
+    <content contentuid="ha3b53d38g690fg4c1eg8199g22729b3f2ae4" version="1">A versatile stone bench with a clean and timeless design, suitable for a wide range of outdoor environments.</content>
+    
+    <content contentuid="hee8d701ag4e7cg4340g9408g3a4e4596eb2d" version="1">Granite Bench - SharTemple Big</content>
+    <content contentuid="hc327db99gf466g4433g9a27g5e22a90a196e" version="1">A grand stone bench crafted for ceremonial settings, combining grandeur with the durability of granite for long-lasting elegance.</content>
+    //
+    <content contentuid="h29203e33g213dg4c20g9eaegb3d1bb517248" version="1">Granite Bench - SharTemple Big Golden</content>
+    <content contentuid="h65845d62g8c60g42f9g9b27g77cd712f1050" version="1">A luxurious stone bench adorned with golden accents, adding opulence to ceremonial spaces with a touch of grandiosity.</content>
+    
+    <content contentuid="h236c67a4g5fc7g487agab42g16f3b9324100" version="1">Granite Bench - SharTemple Small</content>
+    <content contentuid="h1d16d450ga6bag47e0gba32gf79bab34ff6c" version="1">A compact stone bench designed for intimate spaces, reflecting the grandeur of temple settings in a smaller form.</content>
+    
+    <content contentuid="h742f0a26g9f0ag4583gbeacg1b6341f09b5b" version="1">Granite Bench - SharTemple Small Golden</content>
+    <content contentuid="hb5871350gfbcfg45b6g8bd2g819c40e8bb99" version="1">An elegant stone bench with golden embellishments, perfect for creating a regal ambiance in smaller ceremonial spaces.</content>
+    
+    <content contentuid="h70b24e01g6197g43b5gbe4ag9207a3393390" version="1">Wooden Bench - Poor</content>
+    <content contentuid="hc68dde24g3e86g4d8agbcf6g6437bea0c723" version="1">A humble wooden bench, basic yet functional, offering straightforward seating for casual and rustic environments.</content>
+    
+    <content contentuid="habb7fd8eg513eg4bbeg9439gec2a7cda912f" version="1">Sofa - Padded A</content>
+    <content contentuid="h7859b494gfe86g463fgac2fg4033d41d4980" version="1">A comfortable padded sofa with a classic design, providing a cozy and stylish seating option for various living spaces.</content>
+    
+    <content contentuid="hfbd9b0d0gbedeg4f0ag8630gf4c88cb6024e" version="1">Chair - Padded</content>
+    <content contentuid="h3219fb65gdfe6g42c5gbff2g8410c2392ba4" version="1">A cushioned chair offering comfort and support, ideal for creating a relaxed and inviting atmosphere in any room.</content>
+    
+    <content contentuid="heaeebcb5gd020g41e6gba5fgfe3f2afe8755" version="1">Sofa - Padded B</content>
+    <content contentuid="hcaa92f41gda03g477dg906dgaa7b56151145" version="1">An upgraded padded sofa with added comfort, perfect for extended lounging in style and luxury.</content>
+    
+    <content contentuid="h31378251g07deg44afgb984g6ea31d560a0d" version="1">Mahagony Bench</content>
+    <content contentuid="h9d066cc4gd192g450ag91e7g8af90bd429f0" version="1">A richly crafted mahogany bench, combining elegance and durability, making it an exquisite choice for upscale and classic settings.</content>
+    
+    <content contentuid="h74a1f72dg4640g4e12g9017gfd80280e3bb0" version="1">Rich Sofa - Padded A</content>
+    <content contentuid="h9979f819ga9d5g432eg8f43g1a3c04cb9555" version="1">A luxurious padded sofa featuring rich upholstery, providing both opulence and comfort for sophisticated living spaces.</content>
+    
+    <content contentuid="h8f500caeg2099g411egb187gf1e38f6d03e5" version="1">Rich Sofa - Padded B</content>
+    <content contentuid="h11c6d39age476g4fd9ga3f1gdd4965464f8f" version="1">An extravagant padded sofa with plush seating, combining style and relaxation for indulgent and upscale home environments.</content>
+    
+    <content contentuid="hf1d1f30eg799cg417ag9c39g4a23658b422e" version="1">Tavern Bench</content>
+    <content contentuid="h13f1d7bcgaa5dg40dcga0c1g6dd74a5c5bfe" version="1">A vintage wooden bench, weathered with age, evoking nostalgia and adding a touch of history to rustic tavern atmospheres.</content>
+
+    <content contentuid="h99efa4b6g5228g4bddg8bffg836c68c5e6de" version="1">Tavern Bench - Old</content>
+    <content contentuid="he0fa2225g7a9dg4887gb496g0b7d0acba1a1" version="1">A weathered wooden bench with nostalgic charm, adding character to taverns and recalling the memories of lively gatherings.</content>
+    
+    <content contentuid="h2e2c08deg5548g49d9gb79agb201486d8254" version="1">Parliament Bench - Double</content>
+    <content contentuid="hb9801698gac51g44a3g9b79g962ad319d680" version="1">A double-seat bench designed for formal settings, combining functionality with an air of dignified sophistication.</content>
+    
+    <content contentuid="h57fc9eb9gccafg4fe3g912bgf54fedf7ef63" version="1">Parliament Bench - Single</content>
+    <content contentuid="h3b3fcf57g5c9fg409ag8d9eg6e825714172f" version="1">A dignified single-seat bench designed for formal settings, exuding an air of sophistication and elegance in any distinguished environment.</content>
+    
+    <content contentuid="h8d8caff7g980bg43bbgac61gf5ed4995641e" version="1">Temple Bench</content>
+    <content contentuid="h8af02b23g011eg433ag975ag1c6e6685b441" version="1">A serene bench designed for contemplative spaces, offering a simple yet refined seating option suitable for tranquil temple surroundings.</content>
+    
+    <content contentuid="h65114293g5927g426cg968bg4333396e8e4b" version="1">Thayan Sofa - Elegant</content>
+    <content contentuid="h79f126acg7d5dg4a95g950cgaef49db21219" version="1">An elegant sofa reflecting the distinct style of Thayan craftsmanship, adding sophistication and cultural flair to any living space.</content>
+    
+    <content contentuid="h76c49fe4g5f26g4471gb4d5gb588fd664771" version="1">Fallen Tree</content>
+    <content contentuid="h63e4fd61g4a4ag4813g98c8gb26a3f217f14" version="1">A natural and rustic seating option created from a fallen tree, blending outdoor elements with functional design for a unique touch.</content>
+    
+    <content contentuid="he5e77742g1676g49bdgafd9g515700103fd1" version="1">Wooden Bench</content>
+    <content contentuid="h0cb4616dg3f14g4163g8a7ag8ebd14ad9bf3" version="1">A classic and practical wooden bench, providing timeless seating for various settings with its simplicity and durability.</content>
+    
+    <content contentuid="h0ae2ff85g311bg45fagad7agab0b19e424ef" version="1">Sofa</content>
+    <content contentuid="hc1163653gdba9g4bfcg9626g90c2ce1eb764" version="1">A versatile sofa suitable for everyday comfort, combining style and functionality to enhance the ambiance of modern living spaces.</content>
+    
+    <content contentuid="h8bd4db15gc0b4g456dg88a1gae96d5625460" version="1">Rich Sofa - Padded A</content>
+    <content contentuid="hd5247b33gd9f5g42f5g83f3ged27194c45ad" version="1">A sumptuous and well-crafted sofa featuring lavish padding, promising a luxurious and comfortable lounging experience.</content>
+    
+    <content contentuid="h6921deb6ge723g46bcg93bcg634643f8c780" version="1">Rich Sofa - Padded B</content>
+    <content contentuid="h139918e6g8e42g45d3g86f2ge9245257ecc6" version="1">A sophisticated sofa adorned with opulent details, delivering an elevated level of comfort and style to contemporary interiors.</content>
+    
+    <content contentuid="h483dffcdgf5e6g4dbfgaa11g648cd7387654" version="1">Tree Log</content>
+    <content contentuid="hd2d4b875g3ec6g4c53gb2e1gca63a0ffb05b" version="1">A natural and rustic log transformed into a unique seating option, bringing a touch of the outdoors into interior spaces.</content>
 </contentList>

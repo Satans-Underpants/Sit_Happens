@@ -27,6 +27,9 @@ function TryAddSpell(actor, spellName)
 end
 
 
+-- TODO - only items spawned by host are deleted, not by other player in multiplyer
+-- TODO - check if items can be spawned in crtain directon or moved
+
 -- cleans up all spawned items  
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(caster,spell, _, _, _)
     if spell == "CleanUp" then
