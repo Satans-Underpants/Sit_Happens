@@ -2,21 +2,35 @@
 -- refresh spells (used for hot loading)
 ReloadStats()
 
+-- all currently spawned items
+local spawnedItems  
+local spawnLocation
+
 -- add spells on game startup
 -- TODO : modify to add all spells
 function OnSessionLoaded()
+
+    -- add spells for all partymembers
     print("Adding Spell")
 
     Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(_, _)
         local party = Osi.DB_PartyMembers:Get(nil)
         for i = #party, 1, -1 do
             TryAddSpell(party[i][1], "Sit Happens")
+            spawnLocation = party[i][1]
+            print("Spawnlocation at ",party[i][1])
         end
     end)
 
     Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(actor)
-        TryAddSpell(actor, "SizHappens")
+        TryAddSpell(actor, "SitHappens")
     end)
+
+    -- initiate spawnedItems
+    if not spawnedItems then
+        spawnedItems = {}
+    end
+
 end
 
 
@@ -26,17 +40,57 @@ function TryAddSpell(actor, spellName)
     end
 end
 
+function spawnItem(itemId, spawnLocation)
+    local newItem = Osi.CreateAtObject(itemId, spawnLocation, 1, 0, "", 1)
+    spawnedItems.insert(spawnedItems, newItem)
+end
 
--- TODO - only items spawned by host are deleted, not by other player in multiplyer
--- TODO - check if items can be spawned in crtain directon or moved
+
+-- TODO - check if items can be spawned in certain directon or moved
+-- TODO - make objects IgnoreResting to stay forever
 
 -- cleans up all spawned items  
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(caster,spell, _, _, _)
+
+    print("Found UsingSpell")
+
+
     if spell == "CleanUp" then
+        --print("Spawnlocation ", spawnLocation)
         print("CleanUp activated")
-        Osi.RemoveSummons(GetHostCharacter(), 0)
+
+        for _, item in pairs(spawnedItems) do
+            print("item: " ,item)
+            Osi.RequestDelete(item)
+        end
+    end
+
+    -- check if spell is supposed to spawn furniture
+    for furnitureName, furnitureID in pairs(FURNITURE) do
+        if furnitureName == spell then
+            -- debug
+            print("Spell: ", furnitureName)
+            print("UUID ", furnitureID)
+
+            -- Spell has created helper item. Take its id to spawn a chair there
+            local spawnedFurniture = Osi.CreateAtObject(furnitureID,caster,1,0,"",1)
+            table.insert(spawnedItems, spawnedFurniture)
+            print("Inserted ", spawnedFurniture)
+
+        end
     end
 end)
+
+
+--Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target, spell, _, _, _)
+    
+ --   print("Spell: ", spell)
+  --  print("target ", target)
+  --  print("targetLocation: ", Osi.GetPosition(target))
+    
+--end)
+
+
 
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
