@@ -1,5 +1,18 @@
 // Spells are just for assigning ID. They do not summon themselves
 
+new entry "OURCHAIR"
+type "SpellData"
+data "SpellType" "Target"
+data "SpellProperties" "GROUND;"
+data "SpellContainerID" "Sit Happens"
+data "Icon" "Spell_Transmutation_Blink_Teleport"
+data "DisplayName" "h49d33dc8g674dg4e69gb3f9gc31d0b8e8d33"
+data "Description" "h1c63f122gec3ag4403g905cg732540d42829"
+data "TargetConditions" "CanStand('')  and not Character() and not Self()"
+data "CastSound" "Spell_Cast_Utility_DimensionDoor_L4to5"
+data "TargetSound" "Spell_Impact_Utility_DimensionDoor_L4to5"
+data "SpellFlags" "ImmediateCast;IsLinkedSpellContainer"
+
 new entry "TempleChair"
 type "SpellData"
 data "SpellType" "Target"

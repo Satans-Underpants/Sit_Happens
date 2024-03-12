@@ -66,6 +66,7 @@ FURNITURE = {
     ["SofaRichA"] = "22e34173-7d83-445b-a871-033fb87b4d68",
     ["SofaRichB"] = "68bdae4e-d333-4cb2-aefa-ea644c92f7a5",
     ["TreeLog"] = "43e5e37e-b370-4ec6-8f2d-a178b97c4be9",
+    ["OURCHAIR"] = "908dab00-fc71-48fa-b891-f8b5b61eefcd",
 
 
 }
