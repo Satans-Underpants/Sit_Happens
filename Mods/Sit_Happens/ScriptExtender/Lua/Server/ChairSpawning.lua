@@ -52,18 +52,22 @@ end
 -- cleans up all spawned items  
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(caster,spell, _, _, _)
 
+    -- Debug
     print("Found UsingSpell")
 
-
-    if spell == "CleanUp" then
-        --print("Spawnlocation ", spawnLocation)
-        print("CleanUp activated")
-
+    -- Cleans up all spawned items
+    if spell == "AAACleanUp" then
         for _, item in pairs(spawnedItems) do
             print("item: " ,item)
             Osi.RequestDelete(item)
         end
     end
+end)
+
+Ext.Osiris.RegisterListener("UsingSpellAtPosition", 8, "after", function(caster, x, y, z, spell, spellType, spellElement, storyActionID)
+
+    -- Debug
+    print("Found UsingSpell on " , x, y, z)
 
     -- check if spell is supposed to spawn furniture
     for furnitureName, furnitureID in pairs(FURNITURE) do
@@ -72,14 +76,21 @@ Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(caster,spell, _, 
             print("Spell: ", furnitureName)
             print("UUID ", furnitureID)
 
-            -- Spell has created helper item. Take its id to spawn a chair there
-            local spawnedFurniture = Osi.CreateAtObject(furnitureID,caster,1,0,"",1)
+            
+
+            --Osi.TeleportToPosition
+
+
+            local spawnedFurniture = Osi.CreateAt(furnitureID, x, y, z, 1, 0, "")
+            --local spawnedFurniture = Osi.CreateAtObject(furnitureID,caster,1,0,"",1)
             table.insert(spawnedItems, spawnedFurniture)
             print("Inserted ", spawnedFurniture)
 
         end
     end
+
 end)
+
 
 
 --Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target, spell, _, _, _)
