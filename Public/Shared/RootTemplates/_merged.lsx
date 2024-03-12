@@ -1,4 +1,3 @@
-FUR_Temple_Chair_Stone_A
 <?xml version="1.0" encoding="utf-8"?>
 <save>
 	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
@@ -100,3 +99,7 @@ FUR_Temple_Chair_Stone_A
                                         <node id="StatusList" />
                                     </children>
                                 </node>
+                        </children>
+		        </node>
+	    </region>
+</save>
