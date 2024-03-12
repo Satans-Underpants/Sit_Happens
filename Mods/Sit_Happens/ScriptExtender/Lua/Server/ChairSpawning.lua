@@ -7,7 +7,6 @@ local spawnedItems
 local spawnLocation
 
 -- add spells on game startup
--- TODO : modify to add all spells
 function OnSessionLoaded()
 
     -- add spells for all partymembers
@@ -47,13 +46,9 @@ end
 
 
 -- TODO - check if items can be spawned in certain directon or moved
--- TODO - make objects IgnoreResting to stay forever
 
 -- cleans up all spawned items  
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(caster,spell, _, _, _)
-
-    -- Debug
-    print("Found UsingSpell")
 
     -- Cleans up all spawned items
     if spell == "AAACleanUp" then
@@ -64,31 +59,17 @@ Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(caster,spell, _, 
     end
 end)
 
+-- Furnuture Spawning
 Ext.Osiris.RegisterListener("UsingSpellAtPosition", 8, "after", function(caster, x, y, z, spell, spellType, spellElement, storyActionID)
-
-    -- Debug
-    print("Found UsingSpell on " , x, y, z)
 
     -- check if spell is supposed to spawn furniture
     for furnitureName, furnitureID in pairs(FURNITURE) do
         if furnitureName == spell then
-            -- debug
-            print("Spell: ", furnitureName)
-            print("UUID ", furnitureID)
-
-            
-
-            --Osi.TeleportToPosition
-
-
+        
             local spawnedFurniture = Osi.CreateAt(furnitureID, x, y, z, 1, 0, "")
-            --local spawnedFurniture = Osi.CreateAtObject(furnitureID,caster,1,0,"",1)
             table.insert(spawnedItems, spawnedFurniture)
-            print("Inserted ", spawnedFurniture)
-
         end
     end
-
 end)
 
 
