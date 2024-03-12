@@ -1,0 +1,33 @@
+// EXAMPLES
+
+new entry "OBJ_Chair"
+type "Object"
+using "_Furniture"
+data "Weight" "5"
+data "GameSize" "Small"
+data "Vitality" "2"
+data "Flags" ""
+
+new entry "OBJ_Stool"
+type "Object"
+using "OBJ_Chair"
+data "Weight" "1"
+data "GameSize" "Small"
+data "Vitality" "2"
+data "Flags" ""
+
+new entry "OBJ_Sofa"
+type "Object"
+using "_Furniture"
+
+// CREATE MOVABLE FURNITURE
+
+new entry "MOVABLE_FURNITURE"
+type "Object"
+using "OBJ_Chair"
+
+// CREATE NEW FURNITURE USING "MOVABLE FURNITURE"
+
+new entry "FUR_Dungeon_Bench_Stone_B"
+type "Object"
+using "MOVABLE_FURNITURE"
