@@ -6,12 +6,6 @@
     <content contentuid="hd106de78gde49g47bfg8998g505c06bfcc22" version="1">Cleanup</content>
     <content contentuid="hf33e86c8g49fag46c7gb6cag333d1148e35d" version="1">Removes all summons and possible debris.</content>
     
-    <content contentuid="h81744d28gee93g45abg9bdeg7b1a93ec4ad8" version="1">Base Chair</content>
-    <content contentuid="hb6592c46g89f2g4963g91e6g24bd162c9f99" version="1">A simple and comfortable chair.</content>
-    
-    <content contentuid="h53b5c4f5gad82g438cg9addg839ae1c4870a" version="1">Sittable Chair</content>
-    <content contentuid="ha5ffe58dg2694g453ag94e3g71f30ab60b63" version="1">Seems sturdy enough to sit on it.</content>
-    
     <content contentuid="h20f91225g546dg4a08g9034gf05250b65eec" version="1">Temple Stone Chair</content>
     <content contentuid="h5a6907c6g73b4g4d2cgb922gea1b59146bc2" version="1"></content>
     
@@ -23,15 +17,6 @@
     
     <content contentuid="h5de1b009gce9dg4c62g8192g2cc3e87c0b59" version="1">Flat Rock</content>
     <content contentuid="h1e8fb33ag97e8g403bg8793gd1dd79977158" version="1">Comfy Boulder.</content>
-    
-    <content contentuid="h127110f7g5ea8g41d5g9553g44c4779d4e94" version="1">Old Armchair</content>
-    <content contentuid="hce9c0bbdgf09fg49cbg982dg17444eb89f4a" version="1">Best thing to sit in after escaping from a hag.</content>
-    
-    <content contentuid="he253f96cg4091g44ceg8095g31cde2caa802" version="1">Furry Chair</content>
-    <content contentuid="h437affd3g633dg4ae8gbf48g0ac41cb88d73" version="1">Not that kind of furry.</content>
-    
-    <content contentuid="he0a1634bg9094g4b9dgbab5gea7ca30f15fc" version="1">Stool of Hill Giant Strength</content>
-    <content contentuid="h8f4dc42cgd8bbg456fg8d89gc3beba4ec684" version="1">Please don't use for duping - We can't stop you tho.</content>
     
     <content contentuid="h45d69f51gfeb9g4f30g8a36g71ec24ae7a69" version="1">Wooden Chair - Poor</content>
     <content contentuid="h1710a03bgbf4dg4b66g8201g3067353f6e51" version="1">A basic wooden chair, humble yet functional.</content>
@@ -62,12 +47,6 @@
     
     <content contentuid="ha8b40520gfd0ag4a2egb720gf61b75db76c5" version="1">Piano Stool - Padded</content>
     <content contentuid="h5aa808aeg728ag4431gb60egf0247dc708c9" version="1">An upgraded version of the piano stool with added padding for extended sessions.</content>
-    
-    <content contentuid="h2f995758gddecg4412gb114gc8c14a5e35c6" version="1">Stool</content>
-    <content contentuid="h635d56f4g35f0g40a3g8ce6g645a8d910348" version="1">A generic stool, versatile and suitable for various purposes.</content>
-    
-    <content contentuid="h723447a4g1b7ag4ff7gac31g1f82923fe1c5" version="1">Bench</content>
-    <content contentuid="h0b312e9bg07fag49e4gb092ge05eac40275c" version="1">A simple and practical bench, providing seating for individuals seeking a moment of respite.</content>
     
     <content contentuid="h6a30ef65gf42cg411cg9515g9be401f32955" version="1">Ship Benches</content>
     <content contentuid="hcf9c30b1g271cg474cga475gff876ec6d1f0" version="1">Benches designed for ships, offering comfortable seating in a maritime setting.</content>
