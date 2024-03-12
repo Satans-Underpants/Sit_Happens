@@ -55,7 +55,7 @@ FURNITURE = {
     ["SofaBenchRichA"] = "415e850f-adc9-4b4e-83f6-3a4343ba35f1",
     ["SofaBenchRichB"] = "71498970-96f9-4482-9bad-29b11c77a045",
     ["TavernBenchWood"] = "0c45283d-7bd9-4e27-9c27-2028f6f71771",
-    ["TavernBenchWoodOld"] = "8610207c-1744-462d-96ee-a13bf1eae18",
+    ["TavernBenchWoodOld"] = "8610207c-1744-462d-96ee-a13bf1eae186",
     ["ParliamentBenchDouble"] = "6ed52c4f-e62a-4164-a41e-b55719b51b44",
     ["ParliamentBenchSingle"] = "43e71a31-189e-44e9-be1a-ee814f2ee4c7",
     ["TempleBenchStone"] = "b7419c4f-e4c5-4721-b4b4-e28b8cec53cd",
@@ -66,7 +66,7 @@ FURNITURE = {
     ["SofaRichA"] = "22e34173-7d83-445b-a871-033fb87b4d68",
     ["SofaRichB"] = "68bdae4e-d333-4cb2-aefa-ea644c92f7a5",
     ["TreeLog"] = "43e5e37e-b370-4ec6-8f2d-a178b97c4be9",
-    
+
 
 
 
