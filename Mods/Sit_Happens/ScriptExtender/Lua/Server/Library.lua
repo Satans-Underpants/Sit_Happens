@@ -16,7 +16,7 @@ ORIGINS = {
 
 
 FURNITURE = {
-    ["TempleChair"] = "4c0a757a-bfba-470e-88f2-d6977f42870c",
+    ["TempleChair_original"] = "4c0a757a-bfba-470e-88f2-d6977f42870c",
     ["ElegantChairA"] = "e9c0102f-7eb9-4309-9f73-31d1d548d27b",
     ["ElegantChairB"] = "561a8f5d-16bb-4ef6-b9d3-e42832c9bca8",
     ["BoulderChair"] = "e1b6bb5a-c051-4333-b52f-075178a73389",
@@ -68,11 +68,41 @@ FURNITURE = {
     ["TreeLog"] = "43e5e37e-b370-4ec6-8f2d-a178b97c4be9",
 
 
-
-
-
-
-
-
-
 }
+
+FURNITURE_NEW = {
+    -- custom UUID
+    ["TempleChair"] = "1d99720b-505c-471c-a10e-063e8c7cda81",
+}
+
+-- Testing custom furniture
+CustomFurnitureDefinitions = {
+    {
+        FurnitureName = "TempleChair",
+        FurnitureID = "1d99720b-505c-471c-a10e-063e8c7cda81",
+        --new entry "SIT_Mahogany_Bench",
+        --type "Object"
+        --using "_Thrown"
+        --data "RootTemplate" "cf317dd4-34f4-4035-a1ff-e5e6775c4368"
+        --data "Weight" "0"
+        --data "Vitality" "40"
+        --data "BludgeoningResistance" "Vulnerable"
+        --data "SlashingResistance" "Resistant"
+        --data "PiercingResistance" "Resistant"
+        --data "FireResistance" "Resistant"
+        --data "ForceResistance" "Vulnerable"
+        --data "LightningResistance" "Immune"
+        --data "NecroticResistance" "Immune"
+        --data "PoisonResistance" "Immune"
+       -- data "PsychicResistance" "Immune"
+    },
+}
+
+function GetCustomFurnitureID(furnitureName)
+    for _, furniture in ipairs(CustomFurnitureDefinitions) do
+        if furniture.FurnitureName == furnitureName then
+            return furniture.FurnitureID
+        end
+    end
+    return nil 
+end

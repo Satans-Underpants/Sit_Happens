@@ -67,9 +67,34 @@ Ext.Osiris.RegisterListener("UsingSpellAtPosition", 8, "after", function(caster,
         if furnitureName == spell then
         
             local spawnedFurniture = Osi.CreateAt(furnitureID, x, y, z, 1, 0, "")
+            Osi.SetMovable(spawnedFurniture, 1)
+            -- remove all weight Tags and add tag tiny
+            -- TODO - maybe some error handling
+            -- TODO put in seperate function (clearAllWeightTags)
+            Osi.ClearTag(spawnedFurniture, "7f26284a-0c98-48d8-85f3-6c7ab52997df") -- gargantuan
+            Osi.ClearTag(spawnedFurniture, "5e77c1e9-5dbf-4b24-a616-80b5740e77b5") -- huge
+            Osi.ClearTag(spawnedFurniture, "346b447c-93ba-426c-acf5-da9244fb22ec") -- large
+            Osi.ClearTag(spawnedFurniture, "653cb906-38d1-4b80-b598-00b064efff3d") -- medium
+            Osi.ClearTag(spawnedFurniture, "7e99123d-6833-4461-9b4a-b5e281586734") -- small
+            Osi.ClearTag(spawnedFurniture, "9360d001-0cef-49e0-a2e0-4d715d4976ea") -- tiny
+            Osi.SetTag(spawnedFurniture,"9360d001-0cef-49e0-a2e0-4d715d4976ea") -- tiny
             table.insert(spawnedItems, spawnedFurniture)
         end
     end
+
+    -- Else check if it's in FURNITURE_NEW (placeholder, later migrate all)
+    for furnitureName, furnitureID in pairs(FURNITURE_NEW) do
+        if furnitureName == spell then
+            print("New furniture found: ", furnitureName)
+        
+            furnitureID = GetCustomFurnitureID(furnitureName)
+            print("furnitureID = ", furnitureID)
+            local spawnedFurniture = Osi.CreateAt(furnitureID, x, y, z, 1, 0, "")
+            print("spawnedFurniture = ", spawnedFurniture)
+            table.insert(spawnedItems, spawnedFurniture)
+        end
+    end
+
 end)
 
 
