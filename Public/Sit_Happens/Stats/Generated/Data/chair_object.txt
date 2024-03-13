@@ -1,34 +1,6 @@
-// EXAMPLES
-
-new entry "OBJ_Chair"
+new entry "SIT_Template"
 type "Object"
-using "_Furniture"
+using "OBJ_Chair"
+data "RootTemplate" "e8bf7c56-6446-43ff-b99a-87da060db486"
 data "Weight" "5"
-data "GameSize" "Small"
-data "Vitality" "2"
 data "Flags" ""
-
-new entry "OBJ_Stool"
-type "Object"
-using "OBJ_Chair"
-data "Weight" "1"
-data "GameSize" "Small"
-data "Vitality" "2"
-data "Flags" ""
-
-new entry "OBJ_Sofa"
-type "Object"
-using "_Furniture"
-
-// CREATE MOVABLE FURNITURE
-
-new entry "MOVABLE_FURNITURE"
-type "Object"
-using "OBJ_Chair"
-
-// CREATE NEW FURNITURE USING "MOVABLE FURNITURE"
-
-new entry "SIT_OURCHAIR"
-type "Object"
-using "OBJ_Chair"
-data "Weight" "0"

@@ -73,7 +73,7 @@ FURNITURE = {
 
 FURNITURE_NEW = {
     -- custom UUID
-    ["TempleChair"] = "1d99720b-505c-471c-a10e-063e8c7cda81",
+    ["TempleChair"] = "e8bf7c56-6446-43ff-b99a-87da060db486",
 }
 
 -- Testing custom furniture

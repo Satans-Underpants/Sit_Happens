@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<!-- <attribute id="DisplayName" type="TranslatedString" handle="hf2df9456gfc10g45bdg9457gef1f4a3d1143" version="1" /> HANDLE 1 -->
+					<!-- <attribute id="Description" type="TranslatedString" handle="h253dd03cg3ec3g4e6cgb253ge0f6e64b7063" version="1" /> HANDLE 2 -->
+					<!-- <attribute id="EquipmentTypeID" type="guid" value="8ac2eb82-8563-4657-8c4c-1507573978d7" /> Weapon animations (currently greatsword, you can find some of the equipment types down in the green text) -->
+					<attribute id="Flag" type="int32" value="0" />
+					<!-- <attribute id="Icon" type="FixedString" value="ModName" /> this is icon, name it whatever you named the icon (I usaually name it same as the mod, for simplicity) -->
+					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="-1" />
+					<attribute id="MapKey" type="FixedString" value="e8bf7c56-6446-43ff-b99a-87da060db486" /> Weapon UUID (used in weapon.txt as: data "RootTemplate" "Weapon UUID")
+					<attribute id="Name" type="LSString" value="Sit_Template" />
+					<attribute id="ParentTemplateId" type="FixedString" value="5912447d-0772-43d2-a5f6-9d1b6d682e79" />
+					<!-- <attribute id="PhysicsTemplate" type="FixedString" value="c4ea7ee4-38c9-4ced-a086-3aff9345cb9a" /> -->
+					<attribute id="Race" type="int8" value="0" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Stats" type="FixedString" value="Sit_Template" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="6cd711fa-1330-1409-a91b-4ee457b74e12" /> Model UUID
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="ActivateSoundEvent" type="FixedString" value="3ea82655-5140-4287-9ab8-794559f182d3" />
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+
+
+			<!-- 
+				Some equipment types I use:
+
+				edda8fbb-6456-4514-b3cc-36a2bc674c31 - 2 Handed crossbow
+				87fbc05b-c870-4bc1-95fb-56ea3fcb9e22 - 1 Handed crossbow
+				8ac2eb82-8563-4657-8c4c-1507573978d7 - 2 Handed sword
+				edb9b30a-3db2-4a36-b77d-fdfb5eda50f4 - 1 Handed shortsword - piercing
+				12b80df8-aaf1-4543-84fa-c44622e451b5 - 1 Handed sword - slashing
+
+
+			-->
+
+
+		</node>
+	</region>
+</save>
