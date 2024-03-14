@@ -17,6 +17,20 @@ ORIGINS = {
 
 FURNITURE = {
     ["AAFOUNTAIN"] = "b215df87-c0d4-4d81-95fb-1e385f645da6",
+    ["AACITYFLOOR"] = "83aa7dd1-0fc4-485e-a674-abc7b750e83b",
+
+
+
+
+
+
+
+
+
+
+
+
+
     ["AAIMMOVABLEOBJ"] = "115d2399-a009-4a63-82d0-f6c9ef6afdb0",
     ["AADRUIDSTONEBENCH"] = "8edb63b1-38e6-4387-a476-9862ae8f3798",
     ["AATempleChair"] = "4c0a757a-bfba-470e-88f2-d6977f42870c",

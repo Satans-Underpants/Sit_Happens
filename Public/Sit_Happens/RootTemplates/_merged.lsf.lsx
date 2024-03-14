@@ -127,6 +127,24 @@
 						</node>
 					</children>
 				</node>
+				<node id="GameObjects">				
+					<attribute id="CastShadow" type="bool" value="False" />
+					<attribute id="CoverAmount" type="uint8" value="0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="83aa7dd1-0fc4-485e-a674-abc7b750e83b" />
+					<attribute id="Name" type="LSString" value="TD_Dungeon_SharTemple_Trim_CityFloor_A_B_8m_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ee256d56-ff13-429f-9bdd-508a1e0055f6" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="" />
+					<attribute id="Stats" type="FixedString" value="SIT_CITYFLOOR" />
+					<attribute id="Type" type="FixedString" value="scenery" />
+					<attribute id="VisualTemplate" type="FixedString" value="c3ad2c09-b503-e3f3-d57a-858ee388faa6" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241808" />
+				</node>
+
+
+
+
+
 			</children>
 		</node>
 	</region>
