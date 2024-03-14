@@ -16,7 +16,10 @@ ORIGINS = {
 
 
 FURNITURE = {
-    ["TempleChair_original"] = "4c0a757a-bfba-470e-88f2-d6977f42870c",
+    ["AAFOUNTAIN"] = "b215df87-c0d4-4d81-95fb-1e385f645da6",
+    ["AAIMMOVABLEOBJ"] = "115d2399-a009-4a63-82d0-f6c9ef6afdb0",
+    ["AADRUIDSTONEBENCH"] = "8edb63b1-38e6-4387-a476-9862ae8f3798",
+    ["AATempleChair"] = "4c0a757a-bfba-470e-88f2-d6977f42870c",
     ["ElegantChairA"] = "e9c0102f-7eb9-4309-9f73-31d1d548d27b",
     ["ElegantChairB"] = "561a8f5d-16bb-4ef6-b9d3-e42832c9bca8",
     ["BoulderChair"] = "e1b6bb5a-c051-4333-b52f-075178a73389",
@@ -67,13 +70,14 @@ FURNITURE = {
     ["SofaRichB"] = "68bdae4e-d333-4cb2-aefa-ea644c92f7a5",
     ["TreeLog"] = "43e5e37e-b370-4ec6-8f2d-a178b97c4be9",
     ["OURCHAIR"] = "908dab00-fc71-48fa-b891-f8b5b61eefcd",
+    ["AAAOURCHAIR"] = "e8bf7c56-6446-43ff-b99a-87da060db486",
 
 
 }
 
 FURNITURE_NEW = {
     -- custom UUID
-    ["TempleChair"] = "e8bf7c56-6446-43ff-b99a-87da060db486",
+    ["TempleChair"] = "4c0a757a-bfba-470e-88f2-d6977f42870c",
 }
 
 -- Testing custom furniture
