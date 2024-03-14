@@ -1,7 +1,5 @@
 new entry "SIT_Template"
 type "Object"
-using "OBJ_Chair"
 data "RootTemplate" "e8bf7c56-6446-43ff-b99a-87da060db486"
 data "Vitality" "-1"
 data "Weight" ""
-data "Flags" ""
