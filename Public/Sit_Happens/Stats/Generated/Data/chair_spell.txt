@@ -13,12 +13,12 @@ data "CastSound" "Spell_Cast_Utility_DimensionDoor_L4to5"
 data "TargetSound" "Spell_Impact_Utility_DimensionDoor_L4to5"
 data "SpellFlags" "ImmediateCast;IsLinkedSpellContainer"
 
-new entry "AATempleChair"
+new entry "TempleChair"
 type "SpellData"
 data "SpellType" "Target"
 data "SpellProperties" "GROUND;"
 data "SpellContainerID" "Sit Happens"
-data "Icon" "Spell_Evocation_Moonbeam"
+data "Icon" "Spell_Transmutation_Blink_Teleport"
 data "DisplayName" "h20f91225g546dg4a08g9034gf05250b65eec"
 data "Description" "h5a6907c6g73b4g4d2cgb922gea1b59146bc2"
 data "TargetConditions" "CanStand('')  and not Character() and not Self()"
@@ -130,7 +130,6 @@ data "CastSound" "Spell_Cast_Utility_DimensionDoor_L4to5"
 data "TargetSound" "Spell_Impact_Utility_DimensionDoor_L4to5"
 data "SpellFlags" "ImmediateCast;IsLinkedSpellContainer"
 
-
 new entry "TavernStoolSmall"
 type "SpellData"
 data "SpellType" "Target"
@@ -156,7 +155,6 @@ data "TargetConditions" "CanStand('')  and not Character() and not Self()"
 data "CastSound" "Spell_Cast_Utility_DimensionDoor_L4to5"
 data "TargetSound" "Spell_Impact_Utility_DimensionDoor_L4to5"
 data "SpellFlags" "ImmediateCast;IsLinkedSpellContainer"
-
 
 new entry "StoolWoodPoor"
 type "SpellData"
@@ -319,7 +317,6 @@ data "TargetConditions" "CanStand('')  and not Character() and not Self()"
 data "CastSound" "Spell_Cast_Utility_DimensionDoor_L4to5"
 data "TargetSound" "Spell_Impact_Utility_DimensionDoor_L4to5"
 data "SpellFlags" "ImmediateCast;IsLinkedSpellContainer"
-
 
 new entry "DungeonBenchStoneCMoss"
 type "SpellData"
