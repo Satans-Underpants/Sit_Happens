@@ -7,6 +7,9 @@
 				<!-- SIT_Template -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" /> -- REQUIRED -- This gameobjects UUID
+					<!-- <attribute id="CanBeMoved" type="bool" value="True" /> -->
+					<!-- <attribute id="OnUseDescription" type="TranslatedString" handle="hbf1c3932g8130g4ae8g9d16gf167bc593d02" version="1" /> -->
+					<!-- <attribute id="PhysicsTemplate" type="FixedString" value="62a83981-5a5e-45c6-a3ed-02adaf864121" /> -->
 					<attribute id="ParentTemplateId" type="FixedString" value="5912447d-0772-43d2-a5f6-9d1b6d682e79" /> -- REQUIRED -- The template it uses
 					<attribute id="Stats" type="FixedString" value="SIT_Template" /> -- REQUIRED -- Template has some baseline things coming with it, these are additional stats
 					<attribute id="Type" type="FixedString" value="item" /> -- REQUIRED
