@@ -1,4 +1,3 @@
-
 -- refresh spells (used for hot loading)
 ReloadStats()
 
@@ -41,9 +40,9 @@ end)
 Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target, spell, _, _, _)
 
     -- UsingSpellOnTarget returns mapkey
-    -- mapkey is _ + UUID
+    -- mapkey is Name_ + UUID
 
-    local targetID = string.sub(target, 2)
+    local targetID = getUUIDByMapkey(target)
 
     -- Clean up single item if it is furniture
     if spell == "AAACleanUpOne" then
@@ -80,6 +79,13 @@ function TryAddSpell(actor, spellName)
     end
 end
 
+
+function getUUIDByMapkey(mapkey)
+
+    local startPosition = #mapkey - 35
+    local uuid = string.sub(mapkey, startPosition)
+    return uuid
+end
 
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
