@@ -40,21 +40,16 @@ end)
 -- cleans up targeted spawned items  
 Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target, spell, _, _, _)
 
+    -- UsingSpellOnTarget returns mapkey
+    -- mapkey is _ + UUID
+
+    local targetID = string.sub(target, 2)
+
     -- Clean up single item if it is furniture
     if spell == "AAACleanUpOne" then
-        if containsValue(FURNITURE, target) then
-            Osi.RequestDelete(target)
-            table.remove(spawnedItems, getIndex(spawnedItems,target))
-            print("FURNITURE contained target")
-        end
-    end
-
-
-    if spell == "AAACleanUpOne" then
-        if contains(spawnedItems, target) then
-            Osi.RequestDelete(target)
-            table.remove(spawnedItems, getIndex(spawnedItems,target))
-            print("list contained target")
+        if contains(spawnedItems, targetID) then
+            Osi.RequestDelete(targetID)
+            table.remove(spawnedItems, getIndex(spawnedItems,targetID))
         end
     end
 
@@ -73,11 +68,6 @@ Ext.Osiris.RegisterListener("UsingSpellAtPosition", 8, "after", function(_, x, y
     if FURNITURE[spell] then
         local spawnedFurniture = Osi.CreateAt(FURNITURE[spell], x, y, z, 1, 0, "")
         table.insert(spawnedItems, spawnedFurniture)
-    end
-
-
-    for _, furn in pairs(spawnedItems) do
-        print(furn)
     end
 
 end)

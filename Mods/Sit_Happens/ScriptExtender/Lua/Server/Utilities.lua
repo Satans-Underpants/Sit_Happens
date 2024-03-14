@@ -9,7 +9,6 @@ end
 function getIndex(list, item)
     for i, object in ipairs(list) do
         if object == item then
-            print("i")
             return i
         end
     end
@@ -30,10 +29,8 @@ end
 function containsValue(map, item)
     for key, object in pairs(map) do
         if object == item then
-            print("true")
             return true
         end
     end
-    print("false ", item)
     return false
 end
