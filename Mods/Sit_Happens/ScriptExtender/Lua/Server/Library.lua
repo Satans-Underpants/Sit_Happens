@@ -15,19 +15,10 @@ ORIGINS = {
 }
 
 
+-- Custom/modified Furniture, NOT orignial UUID [Public/Sit_Happens/RootTemplates/_merged.lsf.lsx]
 FURNITURE = {
-    ["AAFOUNTAIN"] = "b215df87-c0d4-4d81-95fb-1e385f645da6",
-    ["AACITYFLOOR"] = "83aa7dd1-0fc4-485e-a674-abc7b750e83b",
 
-
-
-
-
-
-
-
-
-
+    ["AA_SIT_Template"] = "b215df87-c0d4-4d81-95fb-1e385f645da6",
 
 
 
@@ -89,39 +80,7 @@ FURNITURE = {
 
 }
 
-FURNITURE_NEW = {
-    -- custom UUID
-    ["TempleChair"] = "4c0a757a-bfba-470e-88f2-d6977f42870c",
+-- hopefully delete
+NAMES = {
+    ["Sit_Template"] = "Sit",
 }
-
--- Testing custom furniture
-CustomFurnitureDefinitions = {
-    {
-        FurnitureName = "TempleChair",
-        FurnitureID = "1d99720b-505c-471c-a10e-063e8c7cda81",
-        --new entry "SIT_Mahogany_Bench",
-        --type "Object"
-        --using "_Thrown"
-        --data "RootTemplate" "cf317dd4-34f4-4035-a1ff-e5e6775c4368"
-        --data "Weight" "0"
-        --data "Vitality" "40"
-        --data "BludgeoningResistance" "Vulnerable"
-        --data "SlashingResistance" "Resistant"
-        --data "PiercingResistance" "Resistant"
-        --data "FireResistance" "Resistant"
-        --data "ForceResistance" "Vulnerable"
-        --data "LightningResistance" "Immune"
-        --data "NecroticResistance" "Immune"
-        --data "PoisonResistance" "Immune"
-       -- data "PsychicResistance" "Immune"
-    },
-}
-
-function GetCustomFurnitureID(furnitureName)
-    for _, furniture in ipairs(CustomFurnitureDefinitions) do
-        if furniture.FurnitureName == furnitureName then
-            return furniture.FurnitureID
-        end
-    end
-    return nil 
-end
