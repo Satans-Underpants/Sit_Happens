@@ -3,8 +3,14 @@
 
     <!-- Util -->
 
-    <content contentuid="h85e56ac7gb9fag4b72ga23ag8bf353ee97e5" version="1">Sit Happens</content>
+    <content contentuid="hc7a70aacg57d2g4238gb6a4g60e8e1be86e1" version="1">Sit Happens - Utils</content>
+    <content contentuid="hededdd5dgaef1g49c8ga338gec2cbd786b36" version="1">Need a clean up or is your favourite chair always falling over?</content>
+
+    <content contentuid="h85e56ac7gb9fag4b72ga23ag8bf353ee97e5" version="1">Sit Happens - Chairs</content>
     <content contentuid="hc21dc97bgd286g4bb9g9031gcf326d508282" version="1">Everyone needs a break!</content>
+
+    <content contentuid="hd5e63d5egd57dg46e0g9ee3g5652459b0789" version="1">Sit Happens - Benches</content>
+    <content contentuid="hb5ad847fg1718g4740g9b55gad70eb1a37bc" version="1">Everyone needs a break! With space for friends!</content>
 
     <content contentuid="hd106de78gde49g47bfg8998g505c06bfcc22" version="1">Cleanup ALL</content>
     <content contentuid="hf33e86c8g49fag46c7gb6cag333d1148e35d" version="1">Removes all summons and possible debris.</content>
@@ -14,6 +20,9 @@
 
     <content contentuid="h6b0b5dbdg38d7g48f0ga4aeg15a9ff02d209" version="1">DEBUG Template Chair</content>
     <content contentuid="h83c5ee82g1d90g4718gb731gb493d80f917f" version="1">Spawns a Template.</content>
+
+    <content contentuid="h72253c93g2e2dg4a40ga75ag7a11e1d991e9" version="1">DEBUG DO NOT USE - TELEPORT</content>
+    <content contentuid="h6f1242a9g03b6g4cefg86f3gd6ab9226d8f5" version="1">Teleports and softlocks your game if you don't know what to do.</content>
 
     <!-- Chairs -->
     

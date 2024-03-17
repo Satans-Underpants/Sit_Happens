@@ -1,3 +1,4 @@
+print("Loaded ChairSpawning.lua")
 -- refresh spells (used for hot loading)
 ReloadStats()
 
@@ -12,7 +13,9 @@ function OnSessionLoaded()
     Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(_, _)
         local party = Osi.DB_PartyMembers:Get(nil)
         for i = #party, 1, -1 do
-            TryAddSpell(party[i][1], "Sit Happens")
+            TryAddSpell(party[i][1], "Sit Happens_UTILS")
+            TryAddSpell(party[i][1], "Sit Happens_CHAIRS")
+            TryAddSpell(party[i][1], "Sit Happens_BENCHES")
         end
     end)
 

@@ -1,4 +1,4 @@
-
+print("Loaded Library.lua")
 BASE_HELP_ITEM_ID = "06f96d65-0ee5-4ed5-a30a-92a3bfe3f708"
 
 ORIGINS = {
@@ -24,13 +24,13 @@ FURNITURE = {
     ["ElegantChairA"] = "7dea1a0a-f3d8-4a23-a262-55b534e67180",
     ["ElegantChairB"] = "b30527ed-cf64-4feb-9f58-193c1dc221b1",
     ["BoulderChair"] = "32885d85-2421-451f-9afb-1bfb53f9f5b9",
-    ["WoodChair"] = "5ef0d9e2-1f5c-46b6-b5a3-94cca5c00cac",
+    -- ["WoodChair"] = "5ef0d9e2-1f5c-46b6-b5a3-94cca5c00cac",
     ["ElegantStool"] = "74c56c9c-bf43-4399-974e-1afc24d27c4f",
     ["WoodStool"] = "78c8aae2-680f-488f-817e-4b038d038fe8",
-    ["TavernStoolLarge"] = "5de5cf15-d77b-41a7-8e0d-38dc7b91b8e9",
+    -- ["TavernStoolLarge"] = "5de5cf15-d77b-41a7-8e0d-38dc7b91b8e9",
     ["TavernStoolLargeOld"] = "f5441826-7305-45fc-a7af-1caacf3240a2",
     ["TavernStoolSmall"] = "ed190751-62b3-4c59-9167-51b0049a8d9b",
-    ["TavernStoolSmallOld"] = "4987a5d0-fa70-4369-8ac7-49a7369a9d4b",
+    -- ["TavernStoolSmallOld"] = "4987a5d0-fa70-4369-8ac7-49a7369a9d4b",
     ["StoolWoodPoor"] = "bfaae7bb-d1d9-44ce-be8e-88adf174feb9",
     ["PianoStoolGeneric"] = "3db6b84c-ef64-490d-b370-1b53ef277886",
     ["PianoStoolRich"] = "e779b95b-83c1-4b9f-9a12-ad87ccfb9563",
@@ -68,6 +68,6 @@ FURNITURE = {
     -- ["Sofa"] = "392017ce-4059-4afc-86f9-aeb1c7204445",
     ["SofaRichA"] = "29798ce1-3fde-49d9-b813-adb5220d5d78",
     ["SofaRichB"] = "25302fc2-f978-4434-9bb4-385636d6b3e7",
-    ["TreeLog"] = "f5bf3072-3196-4f0c-9b1f-f7ae06112bda",
+    -- ["TreeLog"] = "f5bf3072-3196-4f0c-9b1f-f7ae06112bda",
 
 }

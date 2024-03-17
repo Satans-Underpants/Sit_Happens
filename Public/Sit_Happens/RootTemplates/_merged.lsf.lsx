@@ -29,8 +29,8 @@
 				</node>
 				
 			<!-- Example Object -->
-			To find additional VisualTemplates (the models) and other UUID's, check /Public/Shared/RootTemplates/_merged.lsf
-			Use Norbyte's LSLib to convert it into an .lsx to make it readable
+				To find additional VisualTemplates (the models) and other UUID's, check /Public/Shared/RootTemplates/_merged.lsf
+				Use Norbyte's LSLib to convert it into an .lsx to make it readable
 
 				<node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Druid Stone Bench" /> -- Not "Required" but added for lookup and probably official modding tool
@@ -80,14 +80,15 @@
 					<attribute id="Type" type="FixedString" value="item" />
 				</node>
 
-				<node id="GameObjects">
+				<!-- VisualTemplate is used as scenery debris and not aligned with ground - also has no interactable bone -->
+				<!-- <node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Wooden Chair - Poor" />
 					<attribute id="MapKey" type="FixedString" value="5ef0d9e2-1f5c-46b6-b5a3-94cca5c00cac" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="dd420db6-76ad-9d40-8f3f-a01baa05a7b1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h45d69f51gfeb9g4f30g8a36g71ec24ae7a69" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
-				</node>
+				</node> -->
 
 				<node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Thayan Stool - Elegant" />
@@ -107,14 +108,15 @@
 					<attribute id="Type" type="FixedString" value="item" />
 				</node>
 
-				<node id="GameObjects">
+				<!-- Empty VisualTemplate file -->
+				<!-- <node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Large Tavern Stool" />
 					<attribute id="MapKey" type="FixedString" value="5de5cf15-d77b-41a7-8e0d-38dc7b91b8e9" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="3ba1a61b-9240-4c7f-b6cb-5d0d10e526f7" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hc7f1dcc5g7289g40b4gb015g9edc673ad5db" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
-				</node>
+				</node> -->
 
 				<node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Large Tavern Stool - Old" />
@@ -134,14 +136,15 @@
 					<attribute id="Type" type="FixedString" value="item" />
 				</node>
 
-				<node id="GameObjects">
+				<!-- Same visual as Small Tavern Stool -->
+				<!-- <node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Small Tavern Stool - Old" />
 					<attribute id="MapKey" type="FixedString" value="4987a5d0-fa70-4369-8ac7-49a7369a9d4b" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="52ad26a5-26b6-7752-53b2-c27eebd53d66" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hc937f70cg89f4g4accgaa9cg5185eab6f55a" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
-				</node>
+				</node> -->
 
 				<node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Wooden Stool - Poor" />
@@ -479,16 +482,20 @@
 					<attribute id="Type" type="FixedString" value="item" />
 				</node>
 
-				<node id="GameObjects">
+				<!-- VisualTemplate doesn't have interactable bones -->
+				<!-- <node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Tree Log" />
 					<attribute id="MapKey" type="FixedString" value="f5bf3072-3196-4f0c-9b1f-f7ae06112bda" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="c5ace3a7-851a-1199-ee9a-4dc84357277a" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h483dffcdgf5e6g4dbfgaa11g648cd7387654" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
-				</node>
+				</node> -->
 
-				<!-- Empty gameobject to copy with SIT_Template already attached -->
+-----------------------------------------------------------------------------------------------
+
+			<!-- Empty gameobject to copy with SIT_Template already attached -->
+
 				<!-- <node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="" />
@@ -497,6 +504,7 @@
 					<attribute id="DisplayName" type="TranslatedString" handle="" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 				</node> -->
+				
 			</children>
 		</node>
 	</region>
