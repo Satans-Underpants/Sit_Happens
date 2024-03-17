@@ -1,4 +1,3 @@
-print("Loaded Utilities.lua")
 function ReloadStats()
     Ext.Stats.LoadStatsFile("Public/Sit_Happens/Stats/Generated/Data/sit_chair_spells.txt", 0)     
     Ext.Stats.LoadStatsFile("Public/Sit_Happens/Stats/Generated/Data/sit_happens_spells.txt", 0)

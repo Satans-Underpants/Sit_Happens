@@ -1,4 +1,3 @@
-print("Loaded ChairSpawning.lua")
 -- refresh spells (used for hot loading)
 ReloadStats()
 

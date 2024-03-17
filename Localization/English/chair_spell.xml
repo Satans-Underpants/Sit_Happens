@@ -21,8 +21,8 @@
     <content contentuid="h6b0b5dbdg38d7g48f0ga4aeg15a9ff02d209" version="1">DEBUG Template Chair</content>
     <content contentuid="h83c5ee82g1d90g4718gb731gb493d80f917f" version="1">Spawns a Template.</content>
 
-    <content contentuid="h72253c93g2e2dg4a40ga75ag7a11e1d991e9" version="1">DEBUG DO NOT USE - TELEPORT</content>
-    <content contentuid="h6f1242a9g03b6g4cefg86f3gd6ab9226d8f5" version="1">Teleports and softlocks your game if you don't know what to do.</content>
+    <content contentuid="he3674ffagf5c7g444eg8aadg2f98d5b67a19" version="1">Lock Object</content>
+    <content contentuid="h4b071a48g3b3ag45cdga64fg5e824e05b36c" version="1">Locks the selected object in place.</content>
 
     <!-- Chairs -->
     

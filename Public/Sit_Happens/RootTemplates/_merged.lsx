@@ -16,7 +16,6 @@
 					<attribute id="Type" type="FixedString" value="item" /> -- REQUIRED
 					<attribute id="CanBeMoved" type="bool" value="True" /> -- REQUIRED - Not needed for objects using the template
 					<attribute id="WalkThrough" type="bool" value="True" /> -- OPTIONAL
-					<!-- <attribute id="PhysicsTemplate" type="FixedString" value="62a83981-5a5e-45c6-a3ed-02adaf864121" /> - If needed - Can also be added on object by object basis -->
 					<children>
 						<node id="OnUsePeaceActions">
 							<children>

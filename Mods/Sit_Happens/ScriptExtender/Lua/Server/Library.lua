@@ -1,4 +1,3 @@
-print("Loaded Library.lua")
 BASE_HELP_ITEM_ID = "06f96d65-0ee5-4ed5-a30a-92a3bfe3f708"
 
 ORIGINS = {
