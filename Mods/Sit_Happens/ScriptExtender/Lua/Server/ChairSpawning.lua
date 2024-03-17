@@ -32,6 +32,11 @@ Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(_,spell, _, _, _)
         end
         spawnedItems = nil
     end
+
+    if spell == "AATeleport" then
+        local previousLocation = Osi.GetPosition(_C())
+        print(previousLocation)
+    end
     
 end)
 
@@ -49,6 +54,25 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target
         if contains(spawnedItems, targetID) then
             Osi.RequestDelete(targetID)
             table.remove(spawnedItems, getIndex(spawnedItems,targetID))
+        end
+    end
+
+    -- Toggle movement on chosen furniture
+    if spell == "AAAToggleMovement" then
+        print("Movement Spell")
+        if contains(spawnedItems, targetID) then
+             local isMovable = Osi.IsMovable(targetID)
+            if isMovable == 0 then
+                print("before spell: target currently movable: ", isMovable)
+                Osi.SetMovable(targetID, 1) -- Sets movable to true if not movable 
+                print("after spell: target currently movable: ", Osi.IsMovable(targetID))
+
+            else
+                print("before spell: target currently movable: ", isMovable)
+                Osi.SetMovable(targetID, 0) -- Sets movable to false if movable 
+                print("after spell: target currently movable: ", Osi.IsMovable(targetID))
+
+            end
         end
     end
 
