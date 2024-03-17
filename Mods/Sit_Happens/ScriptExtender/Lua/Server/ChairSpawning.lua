@@ -32,12 +32,6 @@ Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(_,spell, _, _, _)
         end
         spawnedItems = nil
     end
-
-    if spell == "AATeleport" then
-        local previousLocation = Osi.GetPosition(_C())
-        print(previousLocation)
-    end
-    
 end)
 
 
