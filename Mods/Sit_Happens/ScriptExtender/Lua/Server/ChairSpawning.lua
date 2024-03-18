@@ -62,6 +62,8 @@ Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(_,spell, _, _, _)
 end)
 
 
+-- maybe it's better to scan the world for all items in FURNITURE? at the start of a save
+
 -- cleans up targeted spawned items  
 Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target, spell, _, _, _)
 
