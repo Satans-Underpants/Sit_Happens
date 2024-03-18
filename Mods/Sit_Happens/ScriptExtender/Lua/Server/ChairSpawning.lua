@@ -12,9 +12,10 @@ function OnSessionLoaded()
     Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(_, _)
         local party = Osi.DB_PartyMembers:Get(nil)
         for i = #party, 1, -1 do
-            TryAddSpell(party[i][1], "Sit Happens_UTILS")
-            TryAddSpell(party[i][1], "Sit Happens_CHAIRS")
-            TryAddSpell(party[i][1], "Sit Happens_BENCHES")
+            TryAddSpell(party[i][1], "Sit_Happens_UTILS")
+            TryAddSpell(party[i][1], "Sit_Happens_CHAIRS")
+            TryAddSpell(party[i][1], "Sit_Happens_BENCHES")
+            -- TryAddDelayedSpells(party[i][1])
         end
     end)
 
@@ -28,7 +29,7 @@ end
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(_,spell, _, _, _)
 
     -- Cleans up all spawned items
-    if spell == "AAACleanUp" and spawnedItems then
+    if spell == "AAA_CleanUp" and spawnedItems then
         for _, item in pairs(spawnedItems) do
             Osi.RequestDelete(item)
         end
@@ -46,7 +47,7 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target
     local targetID = getUUIDByMapkey(target)
 
     -- Clean up single item if it is furniture
-    if spell == "AAACleanUpOne" then
+    if spell == "AAA_CleanUp_One" then
         if contains(spawnedItems, targetID) then
             Osi.RequestDelete(targetID)
             table.remove(spawnedItems, getIndex(spawnedItems,targetID))
@@ -54,7 +55,7 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target
     end
 
     -- Toggle movement on chosen furniture
-    if spell == "AAAToggleMovement" then
+    if spell == "AAA_Toggle_Movement" then
         print("Movement Spell")
         if contains(spawnedItems, targetID) then
              local isMovable = Osi.IsMovable(targetID)
