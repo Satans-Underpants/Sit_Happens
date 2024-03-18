@@ -2,28 +2,54 @@
 ReloadStats()
 
 -- all currently spawned items
+local modID = "7396b2b6-0e41-4b3f-bd88-c3b47e85704a"
 local spawnedItems  
+
+
+PersistentVars = {}
+
+-- Variable will be restored after the savegame finished loading
+function doStuff()
+    PersistentVars['Test'] = 'Something to keep'
+    print("Set PersistentVars Test to String")
+end
+
+doStuff()
+
+
 
 -- add spells on game startup
 function OnSessionLoaded()
+
+    -- Persistent variables are only available after SessionLoaded is triggered!
+    print("PersistentVars afterloading: ", PersistentVars['Test'])
+
 
     -- add spells for all partymembers
 
     Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(_, _)
         local party = Osi.DB_PartyMembers:Get(nil)
         for i = #party, 1, -1 do
-            TryAddSpell(party[i][1], "Sit_Happens_UTILS")
-            TryAddSpell(party[i][1], "Sit_Happens_CHAIRS")
-            TryAddSpell(party[i][1], "Sit_Happens_BENCHES")
-            -- TryAddDelayedSpells(party[i][1])
+
+           -- TryAddSpell(party[i][1], "Sit Happens_UTILS")
+            --TryAddSpell(party[i][1], "Sit Happens_CHAIRS")
+            --TryAddSpell(party[i][1], "Sit Happens_BENCHES")
         end
     end)
 
     Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(actor)
-        TryAddSpell(actor, "SitHappens")
+        --TryAddSpell(actor, "SitHappens")
     end)
+
+
+    -- retrieve spawned items from previous session
+
+
 end
 
+
+-- If item is removable - that means if its mapkey is allowed
+-- failsafe in case users play around with saves a lot and spawnedItems gets deleted
 
 -- cleans up all spawned items  
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(_,spell, _, _, _)
@@ -47,32 +73,37 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target
     local targetID = getUUIDByMapkey(target)
 
     -- Clean up single item if it is furniture
+
+    --if spell == "AAA_CleanUp_One" then
+      --  if contains(spawnedItems, targetID) then
+        --    Osi.RequestDelete(targetID)
+          --  table.remove(spawnedItems, getIndex(spawnedItems,targetID))
+        --end
+    --end
+
+    --Clean up single item if it is furniture
     if spell == "AAA_CleanUp_One" then
-        if contains(spawnedItems, targetID) then
-            Osi.RequestDelete(targetID)
-            table.remove(spawnedItems, getIndex(spawnedItems,targetID))
+        print(target)
+        if containsValue(FURNITURE, target) then
+            print("true")
+            Osi.RequestDelete(target)
+            if contains(spawnedItems, targetID) then
+                table.remove(spawnedItems, getIndex(spawnedItems,targetID))
+            end
         end
     end
 
     -- Toggle movement on chosen furniture
     if spell == "AAA_Toggle_Movement" then
-        print("Movement Spell")
         if contains(spawnedItems, targetID) then
-             local isMovable = Osi.IsMovable(targetID)
+            local isMovable = Osi.IsMovable(targetID)
             if isMovable == 0 then
-                print("before spell: target currently movable: ", isMovable)
-                Osi.SetMovable(targetID, 1) -- Sets movable to true if not movable 
-                print("after spell: target currently movable: ", Osi.IsMovable(targetID))
-
+                Osi.SetMovable(targetID, 1) 
             else
-                print("before spell: target currently movable: ", isMovable)
-                Osi.SetMovable(targetID, 0) -- Sets movable to false if movable 
-                print("after spell: target currently movable: ", Osi.IsMovable(targetID))
-
+                Osi.SetMovable(targetID, 0)
             end
         end
     end
-
 end)
 
 
