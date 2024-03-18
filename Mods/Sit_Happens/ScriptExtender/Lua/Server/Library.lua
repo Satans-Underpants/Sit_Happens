@@ -17,6 +17,8 @@ ORIGINS = {
 -- Custom/modified Furniture, NOT orignial UUID [Public/Sit_Happens/RootTemplates/_merged.lsf.lsx]
 FURNITURE = {
 
+    -- TODO - rename the keys so they have the same name oas the game objects
+
     ["AA_SIT_Template"] = "b215df87-c0d4-4d81-95fb-1e385f645da6",
 
     ["TempleChair"] = "8454a999-149e-4b68-b34c-a158592fddf1",
@@ -31,7 +33,7 @@ FURNITURE = {
     ["TavernStoolSmall"] = "ed190751-62b3-4c59-9167-51b0049a8d9b",
     -- ["TavernStoolSmallOld"] = "4987a5d0-fa70-4369-8ac7-49a7369a9d4b",
     ["StoolWoodPoor"] = "bfaae7bb-d1d9-44ce-be8e-88adf174feb9",
-    ["PianoStoolGeneric"] = "3db6b84c-ef64-490d-b370-1b53ef277886",
+    ["Piano Stool"] = "3db6b84c-ef64-490d-b370-1b53ef277886",
     ["PianoStoolRich"] = "e779b95b-83c1-4b9f-9a12-ad87ccfb9563",
     ["DruidBench_A"] = "47771593-9787-472c-88d5-29aef6d32b6b",
     ["DruidBench_A_Moss"] = "cc5a4204-a69e-4b9c-83c8-009411a1a31b",

@@ -175,7 +175,7 @@ data "SpellFlags" "ImmediateCast;IsLinkedSpellContainer"
 data "HitAnimationType" "None"
 data "SpellAnimationIntentType" "None"
 
-new entry "PianoStoolGeneric"
+new entry "Piano Stool"
 type "SpellData"
 data "SpellType" "Target"
 data "SpellProperties" "GROUND;"

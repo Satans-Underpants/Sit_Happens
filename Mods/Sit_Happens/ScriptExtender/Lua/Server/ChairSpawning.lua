@@ -5,7 +5,6 @@ ReloadStats()
 local modID = "7396b2b6-0e41-4b3f-bd88-c3b47e85704a"
 local spawnedItems  
 
-
 PersistentVars = {}
 
 -- Variable will be restored after the savegame finished loading
@@ -31,21 +30,20 @@ function OnSessionLoaded()
         local party = Osi.DB_PartyMembers:Get(nil)
         for i = #party, 1, -1 do
 
-           -- TryAddSpell(party[i][1], "Sit Happens_UTILS")
-            --TryAddSpell(party[i][1], "Sit Happens_CHAIRS")
-            --TryAddSpell(party[i][1], "Sit Happens_BENCHES")
+            TryAddSpell(party[i][1], "Sit_Happens_UTILS")
+            TryAddSpell(party[i][1], "Sit_Happens_CHAIRS")
+            TryAddSpell(party[i][1], "Sit_Happens_BENCHES")
         end
     end)
 
     Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(actor)
-        --TryAddSpell(actor, "SitHappens")
+        TryAddSpell(actor, "Sit_Happens_UTILS")
+        TryAddSpell(actor, "Sit_Happens_CHAIRS")
+        TryAddSpell(actor, "Sit_Happens_BENCHES")
     end)
-
-
-    -- retrieve spawned items from previous session
-
-
 end
+
+-- TODO function for adding all 3 spells 
 
 
 -- If item is removable - that means if its mapkey is allowed
@@ -67,26 +65,18 @@ end)
 -- cleans up targeted spawned items  
 Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target, spell, _, _, _)
 
-    -- UsingSpellOnTarget returns mapkey
-    -- mapkey is Name_ + UUID
+    -- UsingSpellOnTarget returns unique mapkey
+    -- unique mapkey is Name_ + UUID
 
-    local targetID = getUUIDByMapkey(target)
+    local targetID = getUUIDByUniqueMapkey(target)
 
     -- Clean up single item if it is furniture
 
-    --if spell == "AAA_CleanUp_One" then
-      --  if contains(spawnedItems, targetID) then
-        --    Osi.RequestDelete(targetID)
-          --  table.remove(spawnedItems, getIndex(spawnedItems,targetID))
-        --end
-    --end
-
     --Clean up single item if it is furniture
     if spell == "AAA_CleanUp_One" then
-        print(target)
-        if containsValue(FURNITURE, target) then
-            print("true")
-            Osi.RequestDelete(target)
+        name = getNameByUniqueMapkey(target)
+        if FURNITURE[name] then
+            Osi.RequestDelete(targetID)
             if contains(spawnedItems, targetID) then
                 table.remove(spawnedItems, getIndex(spawnedItems,targetID))
             end
@@ -132,12 +122,20 @@ function TryAddSpell(actor, spellName)
 end
 
 
-function getUUIDByMapkey(mapkey)
+function getUUIDByUniqueMapkey(uniqueMapkey)
 
-    local startPosition = #mapkey - 35
-    local uuid = string.sub(mapkey, startPosition)
+    local startPosition = #uniqueMapkey - 35
+    local uuid = string.sub(uniqueMapkey, startPosition)
     return uuid
 end
+
+function getNameByUniqueMapkey(uniqueMapkey)
+    local endPosition = #uniqueMapkey - 37
+    local strippedString = string.sub(uniqueMapkey, 1, endPosition)
+    return strippedString
+end
+
+
 
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
