@@ -389,14 +389,15 @@
 					<attribute id="Type" type="FixedString" value="item" />
 				</node>
 
-				<node id="GameObjects">
+				<!-- Same visual as Tavern Bench -->
+				<!-- <node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="Tavern Bench - Old" />
 					<attribute id="MapKey" type="FixedString" value="09e4c1f9-81b6-4887-8516-9ce2cb3727f0" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="9c772959-0294-a1f0-e61d-ffc2ebbed79b" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h99efa4b6g5228g4bddg8bffg836c68c5e6de" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
-				</node>
+				</node> -->
 
 				<!-- Not found in RootTemplates _merged.lsx -->
 				<!-- <node id="GameObjects">
@@ -473,7 +474,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Rich Sofa - B Padded" />
+					<attribute id="Name" type="FixedString" value="Rich Armchair" />
 					<attribute id="MapKey" type="FixedString" value="25302fc2-f978-4434-9bb4-385636d6b3e7" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="1707dc10-ad60-c279-2b8a-ee9f011dc4cc" />

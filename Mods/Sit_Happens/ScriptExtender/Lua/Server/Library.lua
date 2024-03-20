@@ -59,7 +59,7 @@ FURNITURE = {
     ["Sofa - A Padded"] = "ad7c19bc-c069-46f5-9337-eafc6966a7ef",
     ["Sofa - B Padded"] = "33f2fab9-c783-47ea-b9fa-f7673978e57f",
     ["Tavern Bench"] = "b94e6c29-6b6b-463a-ba6a-d4ae622cf96d",
-    ["Tavern Bench - Old"] = "09e4c1f9-81b6-4887-8516-9ce2cb3727f0",
+    -- ["Tavern Bench - Old"] = "09e4c1f9-81b6-4887-8516-9ce2cb3727f0",
     -- ["Parliament Bench - Double"] = "6ed52c4f-e62a-4164-a41e-b55719b51b44",
     ["Parliament Bench - Single"] = "fdb904ef-64c2-42ce-8253-a30061681b5a",
     ["Temple Bench"] = "07673f16-4235-4764-bce3-afe16c16be1a",
@@ -68,7 +68,7 @@ FURNITURE = {
     ["Wooden Bench"] = "c39fff19-537e-45ea-8e8a-f8ab3a3886fd",
     -- ["Sofa"] = "392017ce-4059-4afc-86f9-aeb1c7204445",
     ["Rich Sofa - A Padded"] = "29798ce1-3fde-49d9-b813-adb5220d5d78",
-    ["Rich Sofa - B Padded"] = "25302fc2-f978-4434-9bb4-385636d6b3e7",
+    ["Rich Armchair"] = "25302fc2-f978-4434-9bb4-385636d6b3e7",
     -- ["Tree Log"] = "f5bf3072-3196-4f0c-9b1f-f7ae06112bda",
 
 }
