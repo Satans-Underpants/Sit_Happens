@@ -32,10 +32,10 @@
 				Use Norbyte's LSLib to convert it into an .lsx to make it readable
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Druid Stone Bench" /> -- Not "Required" but added for lookup and probably official modding tool
-					<attribute id="MapKey" type="FixedString" value="201cbe54-4fd3-4305-8c16-2336259dbe4c" /> -- Never used anywhere because this is an example
+					<attribute id="Name" type="FixedString" value="Druid Stone Bench" /> -- REQUIRED - For worldspace object "Name_UUID" output
+					<attribute id="MapKey" type="FixedString" value="201cbe54-4fd3-4305-8c16-2336259dbe4c" /> -- REQUIRED - But here never used anywhere because this is an example
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" /> -- REQUIRED - This makes the gameobject use the setup of SIT_Template
-					<attribute id="VisualTemplate" type="FixedString" value="98bd95d7-1eb7-5ecc-555d-ebfb06a9c2ed" />
+					<attribute id="VisualTemplate" type="FixedString" value="98bd95d7-1eb7-5ecc-555d-ebfb06a9c2ed" /> -- REQUIRED - The actual model UUID -- REQUIRES interact bones
 					<attribute id="DisplayName" type="TranslatedString" handle="hcfaeb141g9132g4826ga750gdeeb0124d53e" version="1" /> -- REQUIRED - Mouseover tooltip name of the gameobject
 					<attribute id="Type" type="FixedString" value="item" />
 					<!-- <attribute id="Stats" type="FixedString" value="" /> --> -- Optional because ParentTemplate uses it - Different statsets can be created in chair_object.txt
@@ -200,7 +200,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - Mossy A" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - A Mossy" />
 					<attribute id="MapKey" type="FixedString" value="e62c1b0b-98c6-4e37-9be1-ed32aac9800c" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="2cab0afc-8e08-1629-b91f-f79ca90acc33" />
@@ -209,7 +209,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - Shar A" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - A Shar" />
 					<attribute id="MapKey" type="FixedString" value="bbf17ae5-14b8-4191-a6be-d95046732d6c" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="4d25b8d7-22ff-325c-fe82-462c840be52d" />
@@ -227,7 +227,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - Shar B" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - B Shar" />
 					<attribute id="MapKey" type="FixedString" value="bc18974d-db9a-4ff5-a49c-a78dc133942c" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="691e6726-65f9-b9b2-42e3-884270d4e7fb" />
@@ -254,7 +254,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - Shar C" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - C Shar" />
 					<attribute id="MapKey" type="FixedString" value="5668b953-1d63-47c1-bab9-a765eb413460" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="5efad04d-f9c8-32e2-9728-7a4afb3fe028" />
@@ -281,7 +281,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - SharTemple Big" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - Shar Big" />
 					<attribute id="MapKey" type="FixedString" value="3e2b704e-b69b-45c2-836a-d733e2289afe" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="844c6b62-cf86-722c-d907-724130173cb7" />
@@ -290,7 +290,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - SharTemple Big Golden" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - Shar Big Gold" />
 					<attribute id="MapKey" type="FixedString" value="4458e02a-d2c0-4ffe-850f-09493773711d" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="038608c6-6bd3-2c73-1d4d-5c31c19d19d5" />
@@ -299,7 +299,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - SharTemple Small" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - Shar Small" />
 					<attribute id="MapKey" type="FixedString" value="d0fcda95-9fff-45ee-973d-50d9cf252435" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="78578ed0-f019-16b0-652a-14b37690647f" />
@@ -308,7 +308,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Granite Bench - SharTemple Small Golden" />
+					<attribute id="Name" type="FixedString" value="Granite Bench - Shar Small Gold" />
 					<attribute id="MapKey" type="FixedString" value="6aaa9a10-8604-477d-9f1a-cef7afad1e2c" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="e25cb3bc-348f-3853-17ce-1ba3dd890fdc" />
@@ -327,7 +327,7 @@
 
 				<!-- Not found in RootTemplates _merged.lsx -->
 				<!-- <node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Sofa - Padded A" />
+					<attribute id="Name" type="FixedString" value="Sofa - A Padded" />
 					<attribute id="MapKey" type="FixedString" value="70300252-04cf-4386-b115-58f10f3eb3cd" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="" />
@@ -345,7 +345,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Sofa - Padded B" />
+					<attribute id="Name" type="FixedString" value="Sofa - B Padded" />
 					<attribute id="MapKey" type="FixedString" value="543f6c55-237e-4743-b852-787f341b0263" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="" />
@@ -363,7 +363,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Rich Sofa - Padded A" />
+					<attribute id="Name" type="FixedString" value="Sofa - A Padded" />
 					<attribute id="MapKey" type="FixedString" value="ad7c19bc-c069-46f5-9337-eafc6966a7ef" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="b727c60f-f3a9-4a3d-aeba-15de942b95ee" />
@@ -372,7 +372,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Rich Sofa - Padded B" />
+					<attribute id="Name" type="FixedString" value="Sofa - B Padded" />
 					<attribute id="MapKey" type="FixedString" value="33f2fab9-c783-47ea-b9fa-f7673978e57f" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="38e1b483-875c-72db-4556-60dd2d972869" />
@@ -464,7 +464,7 @@
 				</node> -->
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Rich Sofa - Padded A" />
+					<attribute id="Name" type="FixedString" value="Rich Sofa - A Padded" />
 					<attribute id="MapKey" type="FixedString" value="29798ce1-3fde-49d9-b813-adb5220d5d78" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="c9d50e9a-6f84-42ec-9467-17b198c2ee23" />
@@ -473,7 +473,7 @@
 				</node>
 
 				<node id="GameObjects">
-					<attribute id="Name" type="FixedString" value="Rich Sofa - Padded B" />
+					<attribute id="Name" type="FixedString" value="Rich Sofa - B Padded" />
 					<attribute id="MapKey" type="FixedString" value="25302fc2-f978-4434-9bb4-385636d6b3e7" />
 					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
 					<attribute id="VisualTemplate" type="FixedString" value="1707dc10-ad60-c279-2b8a-ee9f011dc4cc" />
