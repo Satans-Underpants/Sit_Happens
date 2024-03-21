@@ -11,7 +11,7 @@ end
 -- cleans up all spawned items  
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function(_,spell, _, _, _)
 
-    if spell == "AAA_CleanUp" and spawnedItems() then
+    if (spell == "AAA_CleanUp" or spell == "AAAA_UNINSTALL") and spawnedItems() then
         for _, item in pairs(spawnedItems()) do
             Osi.RequestDelete(item)
         end
