@@ -1,5 +1,3 @@
-BASE_HELP_ITEM_ID = "06f96d65-0ee5-4ed5-a30a-92a3bfe3f708"
-
 ORIGINS = {
     ["Wyll"] = "S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d",
     ["ShadowHeart"] = "S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679",
@@ -14,13 +12,12 @@ ORIGINS = {
 }
 
 
--- Custom/modified Furniture, NOT orignial UUID [Public/Sit_Happens/RootTemplates/_merged.lsf.lsx]
+-- Custom/modified Furniture, NOT orignial UUID [Public/Sit_Happens/RootTemplates/_merged.lsf/lsx]
+
+-- Table links spell names to mapkey of new custom game objects
 FURNITURE = {
 
-    -- TODO - rename the keys so they have the same name oas the game objects
-
     ["AA_SIT_Template"] = "b215df87-c0d4-4d81-95fb-1e385f645da6",
-
     ["Temple Stone Chair"] = "8454a999-149e-4b68-b34c-a158592fddf1",
     ["Thayan Chair - A"] = "7dea1a0a-f3d8-4a23-a262-55b534e67180",
     ["Thayan Chair - B"] = "b30527ed-cf64-4feb-9f58-193c1dc221b1",
@@ -46,7 +43,7 @@ FURNITURE = {
     ["Granite Bench - C Mossy"] = "b88eb5cf-abe5-4f00-8303-7a624a77be6c",
     ["Granite Bench - C Shar"] = "5668b953-1d63-47c1-bab9-a765eb413460",
     ["Granite Bench - D"] = "50eae338-812b-4442-8d78-0b86bcd1fe03",
-    ["Granite Bench -E"] = "3531be1c-af08-4d13-b2b4-27b80102598b",
+    ["Granite Bench - E"] = "3531be1c-af08-4d13-b2b4-27b80102598b",
     ["Granite Bench - Shar Big"] = "3e2b704e-b69b-45c2-836a-d733e2289afe",
     ["Granite Bench - Shar Big Gold"] = "4458e02a-d2c0-4ffe-850f-09493773711d",
     ["Granite Bench - Shar Small"] = "d0fcda95-9fff-45ee-973d-50d9cf252435",
@@ -70,5 +67,4 @@ FURNITURE = {
     ["Rich Sofa - A Padded"] = "29798ce1-3fde-49d9-b813-adb5220d5d78",
     ["Rich Armchair"] = "25302fc2-f978-4434-9bb4-385636d6b3e7",
     -- ["Tree Log"] = "f5bf3072-3196-4f0c-9b1f-f7ae06112bda",
-
 }

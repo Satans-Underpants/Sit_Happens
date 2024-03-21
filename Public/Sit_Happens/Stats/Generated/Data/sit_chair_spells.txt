@@ -349,7 +349,7 @@ data "CastSound" "Spell_Cast_Utility_DimensionDoor_L4to5"
 data "TargetSound" "Spell_Impact_Utility_DimensionDoor_L4to5"
 data "SpellFlags" "ImmediateCast;IsLinkedSpellContainer"
 
-new entry "Granite Bench -E"
+new entry "Granite Bench - E"
 type "SpellData"
 data "SpellType" "Target"
 data "SpellProperties" "GROUND"
