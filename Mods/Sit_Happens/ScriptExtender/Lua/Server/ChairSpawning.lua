@@ -81,6 +81,3 @@ function getNameByUniqueMapkey(uniqueMapkey)
     local strippedString = string.sub(uniqueMapkey, 1, endPosition)
     return strippedString
 end
-
-
-Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)

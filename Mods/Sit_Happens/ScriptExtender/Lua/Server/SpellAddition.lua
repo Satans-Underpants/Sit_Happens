@@ -1,10 +1,6 @@
 -- add spells on game startup
 function OnSessionLoaded()
 
-    -- Persistent variables are only available after SessionLoaded is triggered!
-    print("PersistentVars afterloading: ", PersistentVars['Test'])
-
-
     -- add spells for all partymembers
 
     Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(_, _)
