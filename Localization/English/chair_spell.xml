@@ -3,6 +3,9 @@
 
     <!-- Util -->
 
+    <content contentuid="h6d724af4gd6a4g482cgafe7gc387ebf3f599" version="1">UNINSTALL INSTRUCTIONS</content>
+    <content contentuid="h20da1db9g3259g4fe9gae59gbee1b476d1f6" version="1">Use either THIS spell or Cleanup All once before removing the mod from your load order, to purge stored gameobject data. Dont spawn any more furniture after this, otherwise you won't be able to load your save again!</content>
+
     <content contentuid="hc7a70aacg57d2g4238gb6a4g60e8e1be86e1" version="1">Sit Happens - Utils</content>
     <content contentuid="hededdd5dgaef1g49c8ga338gec2cbd786b36" version="1">Need a clean up or is your favourite chair always falling over?</content>
 

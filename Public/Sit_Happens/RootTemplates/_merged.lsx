@@ -494,7 +494,9 @@
 
 -----------------------------------------------------------------------------------------------
 
-			<!-- Empty gameobject to copy with SIT_Template already attached -->
+			<!-- Empty gameobject to copy/paste with SIT_Template already attached -->
+				Mod checks for gameobjects having the same "Name" as the spell to actually being able to delete them so you don't accidentally delete anything else in world space
+				What we do is creating 2 handle UUIDs for the loca spellname and description and using the spellname hUUID as the gameobjects "DisplayName"
 
 				<!-- <node id="GameObjects">
 					<attribute id="Name" type="FixedString" value="" />
