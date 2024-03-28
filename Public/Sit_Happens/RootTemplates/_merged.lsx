@@ -491,6 +491,15 @@
 					<attribute id="DisplayName" type="TranslatedString" handle="h483dffcdgf5e6g4dbfgaa11g648cd7387654" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 				</node> -->
+				
+				<node id="GameObjects">
+					<attribute id="Name" type="FixedString" value="Rickety Chair" />
+					<attribute id="MapKey" type="FixedString" value="f1f69e1d-2148-424f-b3ae-8313777728f8" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b215df87-c0d4-4d81-95fb-1e385f645da6" />
+					<attribute id="VisualTemplate" type="FixedString" value="8b27c8dc-7197-a573-e39e-007be7bc6551" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h2ee8c5a0gb830g4bc2ga890ge469cedd4eb3" version="1" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>				
 
 -----------------------------------------------------------------------------------------------
 
