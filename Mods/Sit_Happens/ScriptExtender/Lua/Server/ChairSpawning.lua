@@ -25,24 +25,25 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(_, target
     -- unique mapkey is Name_ + UUID
  
     --Clean up single item if it is furniture
-    if spell == "AAA_CleanUp_One" then
-        name = getNameByUniqueMapkey(target)
+    if spell == "AA_CleanUp_Singular" then
+        local name = getNameByUniqueMapkey(target)
         if FURNITURE[name] then
-            Osi.RequestDelete(targetID)
-            if contains(spawnedItems(), targetID) then
-                table.remove(spawnedItems(), getIndex(spawnedItems(),targetID))
+            Osi.RequestDelete(target)
+            if contains(spawnedItems(), target) then
+                table.remove(spawnedItems(), getIndex(spawnedItems(),target))
             end
         end
     end
 
     -- Toggle movement on chosen furniture
-    if spell == "AAA_Toggle_Movement" then
-        if contains(spawnedItems(), targetID) then
-            local isMovable = Osi.IsMovable(targetID)
+    if spell == "A_Toggle_Movement" then
+        local target = getUUIDByUniqueMapkey(target)
+        if contains(spawnedItems(), target) then
+            local isMovable = Osi.IsMovable(target)
             if isMovable == 0 then
-                Osi.SetMovable(targetID, 1)
+                Osi.SetMovable(target, 1)
             else
-                Osi.SetMovable(targetID, 0)
+                Osi.SetMovable(target, 0)
             end
         end
     end

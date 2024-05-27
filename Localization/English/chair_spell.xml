@@ -9,11 +9,14 @@
     <content contentuid="hc7a70aacg57d2g4238gb6a4g60e8e1be86e1" version="1">Sit Happens - Utils</content>
     <content contentuid="hededdd5dgaef1g49c8ga338gec2cbd786b36" version="1">Need a clean up or is your favourite chair always falling over?</content>
 
+    <content contentuid="hd5e63d5egd57dg46e0g9ee3g5652459b0789" version="1">Sit Happens - Benches</content>
+    <content contentuid="hb5ad847fg1718g4740g9b55gad70eb1a37bc" version="1">Everyone needs a break! With space for friends!</content>
+
     <content contentuid="h85e56ac7gb9fag4b72ga23ag8bf353ee97e5" version="1">Sit Happens - Chairs</content>
     <content contentuid="hc21dc97bgd286g4bb9g9031gcf326d508282" version="1">Everyone needs a break!</content>
 
-    <content contentuid="hd5e63d5egd57dg46e0g9ee3g5652459b0789" version="1">Sit Happens - Benches</content>
-    <content contentuid="hb5ad847fg1718g4740g9b55gad70eb1a37bc" version="1">Everyone needs a break! With space for friends!</content>
+    <content contentuid="heff29804g0480g4356gb609g75659cae60de" version="1">Sit Happens - 3rd Party Furniture</content>
+    <content contentuid="h18e3a761g097dg4aa0gb877gae282641b570" version="1">Custom made, from the community, for the community!</content>
 
     <content contentuid="hd106de78gde49g47bfg8998g505c06bfcc22" version="1">Cleanup ALL</content>
     <content contentuid="hf33e86c8g49fag46c7gb6cag333d1148e35d" version="1">Removes all summons and possible debris.</content>
@@ -26,6 +29,8 @@
 
     <content contentuid="he3674ffagf5c7g444eg8aadg2f98d5b67a19" version="1">Lock Object</content>
     <content contentuid="h4b071a48g3b3ag45cdga64fg5e824e05b36c" version="1">Locks the selected object in place.</content>
+
+
 
     <!-- Chairs -->
     
@@ -178,5 +183,8 @@
 
     <content contentuid="h2ee8c5a0gb830g4bc2ga890ge469cedd4eb3" version="1">Rickety Chair</content>
     <content contentuid="h3579890fg23d8g4254ga95eg25964599f067" version="1">Not so stable.</content>
+
+    <content contentuid="hd47487ecgf7f3g4aa9gbbfageaeb61bf68dc" version="1">Froggy Chair</content>
+    <content contentuid="hfb5f952dg4afag42f8gb8f8g361e8d016e24" version="1">Ribbit.</content>
 
 </contentList>

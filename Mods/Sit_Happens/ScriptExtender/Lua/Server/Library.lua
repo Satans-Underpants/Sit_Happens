@@ -68,4 +68,5 @@ FURNITURE = {
     ["Rich Armchair"] = "25302fc2-f978-4434-9bb4-385636d6b3e7",
     -- ["Tree Log"] = "f5bf3072-3196-4f0c-9b1f-f7ae06112bda",
     ["Rickety Chair"] = "f1f69e1d-2148-424f-b3ae-8313777728f8",
+    ["Froggy Chair"] = "e12aee9d-9afa-4112-9907-86daf215cfcd"
 }

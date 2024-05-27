@@ -25,8 +25,11 @@ end
 
 function addChairSpells(entity)
     TryAddSpell(entity, "Sit_Happens_UTILS")
-    TryAddSpell(entity, "Sit_Happens_CHAIRS")
     TryAddSpell(entity, "Sit_Happens_BENCHES")
+    TryAddSpell(entity, "Sit_Happens_CHAIRS")
+    if Ext.Mod.IsModLoaded("af31ce51-252c-4698-99f9-021dbe019d74")==true then
+        TryAddSpell(entity, "Sit_Happens_3rdParty")
+    end
 end
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
